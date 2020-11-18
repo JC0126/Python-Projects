@@ -1,0 +1,47 @@
+print("Welcome to the text interactive game!")
+name = input("What is your name? ")
+print("Hello ",name,"! \nAre you excited to play the TIG? \nI hope so!")
+age = int(input("Before we get started, tell us your age! "))
+if (age >= 18):
+    print("Congrats",name,"! You are indeed olde enough for the TIG!")
+    ready = input("Are you ready to play? (yes/no) ").lower()
+    if ready == "yes":
+        print("Great! Let's get started.")
+        print("Your name is Gretel. \nYou have a brother named Hansel.")
+        print("You were born to a poor woodcutter in medieval Germany. \nOne day, your step-mother decides that you and your brother need to die if the family is to survive. \nShe forces your dad to leave you and your brother in the forest to die. \nHowever, you left pebbles behind so you can follow the trail back home. \nThe next day, your step-mother decides to take you back into the forest again, but this time took the pebbles away from you. \nIn desperate attempt to not die, you decide to leave a trail of breadcrumbs. \nHowever, when you look for the trail, you realize that birds have eaten the crumbs. \nAfter days of wandering, you follow a beautiful white bird to a clearing in the woods, and discover a large cottage built of gingerbread, cakes, candy and with window panes of clear sugar.")
+        go_inside_house = input("Do you go inside the cottage? (yes/no) ").lower()
+        if (go_inside_house == "yes"):
+            print("As you approach the house, you are greeted by a very old woman who tells you that she has a soft bed and lots of treats and food inside the house. \nToo hungry to think better, you decide to follow the old woman into the house made of treats. \nOnce inside the house, you and Hansel are provided with enough food and treats to feed an entire village. \nAfter gulping down the food, you and Hansel are greeted by a bed so big you could fit five people on it. \nThe bed is soft like it was made out of feathers from an angel")
+            print("When you wake up the next morning, you find out that Hansel has been locked into a cage. \nThe old woman turns out to be a cannibalistic witch who plans on eating you and Hansel. \nShe forces you to serve as a maid while she fattens Hansel. \nWhile cleaning the house, you realize that the witch has a very poor eyesight.")
+            hansel_bone = input("Do you tell Hansel to use the bones in the cage to fake how fat he is or tell him to just let the witch touch his arms? (bones/arms) ").lower()
+            if (hansel_bone == "bones"):
+                print("You tell Hansel to use the bones to fake how fat he is. \nThe witch is fooled and thinks Hansel needs to get fatter before eating.")
+                print("Much to your dismay, the witch gets impatient and decides to eat Hansel right away. \nThe witch prepares the oven for cooking. \nWhile she is preparing the oven, she decides that she is hungry enough to eat youas well. \nShe asks you to bend over the oven to see if the fire is hot enough.")
+                act_dumb = input("Do you bend over the oven like the witch asked you to or do you pretend to not understand what she means? (bend/pretend) ").lower()
+                if (act_dumb == "pretend"):
+                    print("You pretend not to understand what the witch meant. \nThe witch gets furious and tries to demonstrate what she meant. \nYou have a split second where you can decide whether to push the witch into the oven or not.")
+                    push_witch = input("Do you push the witch in or do you hesitate? (push/hesitate) ").lower()
+                    if (push_witch == "push"):
+                        print("You push the witch into the oven. \nYou slam and bolt the door shut. \nAfter freeing Hansel from the cage, you escape the house with the witch's treasures. \nIn the forest, you find a swan. \nIt ferries you and Hansel across an expanse of water towards your house. \nAt home, you find only your father, because your step-mother had died from a mysterious cause. \nYou learn that your father had spent all his days lamenting the loss of his children, and is delighted to see them safe and sound. \nWith the witch's wealth, your father, Hansel, and you all live happily ever after")
+                        print("THE END")
+                        print("Thank you for playing the TIG! It's been a pleasure to be your host.")
+                        print("Made and coded by Joseph Choe")
+                    else:
+                        print("You hesitate, so you fail to capitalize on your chance. \nThe witch eats you and your brother as a result.")
+                        print("\nYou died.")
+                        print("Made and coded by Joseph Choe")
+                else:
+                    print("You bend over the oven and the witch pushes you in. \nYou slowly burn to death while contemplating what else you could have done to save you and your brother.")
+                    print("\nYou died.")
+                    print("Made and coded by Joseph Choe")
+            else:
+                print("You tell Hansel to let the witch touch his arm. \nThe witch decides Hansel is fat enough to eat. \nThe witch eats Hansel then eats you.")
+                print("\nYou died.")
+                print("Made and coded by Joseph Choe")
+        else:
+            print("You and Hansel starved to death in the forest.\n\nYou died.")
+            print("Made and coded by Joseph Choe")
+    else:
+        print("Bye then...")
+else:
+    print("Sorry",name,", You are unfortunately not old enough.")
